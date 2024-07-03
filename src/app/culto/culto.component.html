@@ -1,0 +1,9 @@
+<div *ngFor="let cultos of culto">
+    <h3>{{cultos.nome}}</h3>
+    <p>{{cultos.descricao}}</p>
+    <p>{{cultos.data}}</p>
+    <p>{{cultos.horario}}</p>
+    <p>{{cultos.local}}</p>
+    <iframe [src]="cultos.link" width="600" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    
+</div>
