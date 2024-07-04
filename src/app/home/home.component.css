@@ -2,3 +2,16 @@
     opacity: 0.3;
     width: 100%;
 }
+
+.titulo{
+    padding-top: 20px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+}
+
+.subtitulo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}

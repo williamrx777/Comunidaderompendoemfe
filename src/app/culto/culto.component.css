@@ -3,4 +3,13 @@
     flex-direction: row;
     justify-content: space-around;
     opacity: 0.8;
+    max-width: 100%;
+    margin: 0 auto;
 }
+
+.link {
+    padding-top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
