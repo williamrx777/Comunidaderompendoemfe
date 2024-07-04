@@ -1,23 +1,28 @@
 <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active" *ngIf="culto.length > 0">
-        <div class="container">
-          <iframe class="link" [src]="culto[0].link" width="640" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-        </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" *ngIf="culto.length > 0">
+      <div class="container">
+        <iframe class="link" [src]="culto[0].link" width="640" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
       </div>
-      <div class="carousel-item" *ngFor="let cultos of culto.slice(1)">
-        <div class="container">
-          <iframe class="link" [src]="cultos.link" width="640" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-        </div>
-      </div>
+      <p class="dataHoraLocal">{{ culto[0].data }}</p>
+      <p class="dataHoraLocal">{{ culto[0].horario }}</p>
+      <p class="dataHoraLocal">{{ culto[0].local }}</p>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <div class="carousel-item" *ngFor="let cultos of culto.slice(1)">
+      <div class="container">
+        <iframe class="link" [src]="cultos.link" width="640" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+      </div>
+      <p class="dataHoraLocal">{{ cultos.data }}</p>
+      <p class="dataHoraLocal">{{ cultos.horario  }}</p>
+      <p class="dataHoraLocal">{{ cultos.local }}</p>
+    </div>
   </div>
-  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

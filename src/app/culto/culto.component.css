@@ -13,3 +13,9 @@
     margin: 0 auto;
 }
 
+.dataHoraLocal{
+    color: white;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 1.2em;
+}
