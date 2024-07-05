@@ -24,4 +24,29 @@ header{
     width: 100%;
     height: 100vh; /* Ajuste conforme necessário */
   }
-  
+footer{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+}
+
+.sociais {
+    color: white;
+}
+
+.horario{
+    color: white;
+}
