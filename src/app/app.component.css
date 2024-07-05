@@ -29,14 +29,14 @@ header{
   @media (max-width: 768px) {
     .fundo {
       background-size: contain; /* Ajuste conforme necessário para telas menores */
-      height: auto;
+      height: 100%;
     }
   }
   
   @media (max-width: 480px) {
     .fundo {
       background-size: contain; /* Ajuste conforme necessário para telas muito pequenas */
-      height: auto;
+      height: 100%;
     }
   }  
   

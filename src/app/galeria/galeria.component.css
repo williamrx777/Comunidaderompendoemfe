@@ -4,8 +4,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
+
 }
 .galeria{
     padding-top: 10px;
-
+    padding-bottom: 10px;
 }
