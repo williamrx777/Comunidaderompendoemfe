@@ -7,10 +7,10 @@ import { GaleriaComponent } from './galeria/galeria.component';
 import { HorarioComponent } from './horario/horario.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'culto', component: CultoComponent },
+    // { path: '', component: HomeComponent },
+    { path: '', component: CultoComponent },
     { path: 'galeria', component: GaleriaComponent },
-    // { path: 'contato', component: ContatoComponent },
+    { path: 'contato', component: ContatoComponent },
     // { path: 'horario', component: HorarioComponent },
     { path: 'testemunho', component: TestemunhoComponent }
 ];
