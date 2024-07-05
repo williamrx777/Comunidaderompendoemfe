@@ -5,6 +5,7 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: black;
+    width: 100%;
 }
 
 .rotas {
@@ -29,6 +30,7 @@ footer{
     display: flex;
     flex-direction: row;
     background-color: black;
+    width: 100%;
 }
 
 .container {
