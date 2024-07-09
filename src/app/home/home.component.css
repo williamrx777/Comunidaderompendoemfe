@@ -9,14 +9,14 @@
 
 @media (max-width: 768px) {
   .fundo {
-    background-size: auto; /* Ajuste conforme necessário para telas menores */
+    background-size: contain; /* Ajuste conforme necessário para telas menores */
     height: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .fundo {
-    background-size: auto; /* Ajuste conforme necessário para telas muito pequenas */
+    background-size: contain; /* Ajuste conforme necessário para telas muito pequenas */
     height: 100%;
   }
 }
