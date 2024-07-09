@@ -1,13 +1,23 @@
+<main class="fundo">
+ 
+    <img class="img-fluid "  src="cultos.jpg" alt="fundo">
+  
+</main>
+
 <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active" *ngIf="culto.length > 0">
-      <div class="container">
-        <iframe class="link" [src]="culto[0].link" width="100%" height="auto" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+      <div class="container d-flex">
+        <div class="col-4" *ngFor="let cultos of culto.slice(0, 3)">
+          <iframe class="link" [src]="cultos.link" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
       </div>
     </div>
-    <div class="carousel-item" *ngFor="let cultos of culto.slice(1)">
-      <div class="container">
-        <iframe class="link" [src]="cultos.link" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    <div class="carousel-item" *ngFor="let group of culto.slice(3) | chunk: 3">
+      <div class="container d-flex">
+        <div class="col-4" *ngFor="let cultos of group">
+          <iframe class="link" [src]="cultos.link" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
       </div>
     </div>
   </div>

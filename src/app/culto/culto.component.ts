@@ -2,11 +2,12 @@ import { NgFor, CommonModule } from '@angular/common';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { ChunkPipe } from './chunk.pipe';
 
 @Component({
   selector: 'app-culto',
   standalone: true,
-  imports: [NgFor, CommonModule, HttpClientModule],
+  imports: [NgFor, CommonModule, HttpClientModule, ChunkPipe],
   templateUrl: './culto.component.html',
   styleUrls: ['./culto.component.css']
 })
