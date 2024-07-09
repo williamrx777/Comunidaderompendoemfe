@@ -1,1 +1,22 @@
+.fundo {
+  background-image: url("/assets/images/fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  width: 100%;
+  height: 100vh;
+}
 
+@media (max-width: 768px) {
+  .fundo {
+    background-size: auto; /* Ajuste conforme necessário para telas menores */
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .fundo {
+    background-size: auto; /* Ajuste conforme necessário para telas muito pequenas */
+    height: 100%;
+  }
+}
