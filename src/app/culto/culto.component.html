@@ -10,7 +10,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4" *ngFor="let cultos of culto.slice(0, 3)">
-            <iframe class="link" [src]="cultos.link" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <div class="video-thumbnail" (click)="openModal(cultos.link)">
+              <iframe class="link" [src]="cultos.link"  allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -19,7 +21,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4" *ngFor="let cultos of group">
-            <iframe class="link" [src]="cultos.link" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <div class="video-thumbnail" (click)="openModal(cultos.link)">
+              <iframe class="link" [src]="cultos.link"  allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -34,4 +38,19 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+<!-- Modal -->
+<div *ngIf="expandedVideo" class="modal fade show d-block" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" (click)="closeModal()" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe class="expanded-video" [src]="expandedVideo" frameborder="0" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
 

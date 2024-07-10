@@ -13,7 +13,8 @@ import { ChunkPipe } from './chunk.pipe';
 })
 export class CultoComponent implements OnInit {
   culto: any[] = [];
-  
+  expandedVideo: SafeResourceUrl | null = null;
+
   constructor(private http: HttpClient, private sanitizer: DomSanitizer) {}
 
   ngOnInit(): void {
@@ -27,5 +28,15 @@ export class CultoComponent implements OnInit {
 
   sanitizeUrl(url: string): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+
+  openModal(url: SafeResourceUrl): void {
+    this.expandedVideo = url;
+    document.body.classList.add('no-scroll');
+  }
+
+  closeModal(): void {
+    this.expandedVideo = null;
+    document.body.classList.remove('no-scroll');
   }
 }

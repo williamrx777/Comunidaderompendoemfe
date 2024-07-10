@@ -6,8 +6,10 @@
     padding-top: 20px;
     display: block;
     margin: 0 auto;
-    width: 75%;
+    width: 100%;
+    height: 300px;
     padding-bottom: 20px;
+    transition: all 0.3s ease;
 }
 
 /* Ajuste para telas menores */
@@ -49,4 +51,27 @@
         width: 100%;
         margin-bottom: 15px;
     }
+}
+
+/* Estilo para o vídeo expandido */
+.modal-dialog {
+    max-width: 80%;
+    width: 100%;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.expanded-video {
+    width: 100%;
+    height: 80vh;
 }
