@@ -28,20 +28,25 @@
 @media (max-width: 768px) {
     .link {
         width: 100%;
-        height: auto; /* Ajuste a altura para conteúdo variável */
+        height: 300px; /* Ajuste a altura para conteúdo variável */
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+    .expandi {
+        display: none;
     }
 }
 
 @media (max-width: 576px) {
     .link {
         width: 100%;
-        height: auto; /* Ajuste a altura para conteúdo variável */
+        height: 300px; /* Ajuste a altura para conteúdo variável */
         padding-top: 15px;
         padding-bottom: 15px;
     }
-
+    .expandi {
+        display: none;
+    }
     /* Ajusta a exibição para empilhar verticalmente */
     .container .row {
         display: block;
