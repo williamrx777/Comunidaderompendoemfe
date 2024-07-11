@@ -19,7 +19,8 @@ export class CultoComponent implements OnInit {
 
   ngOnInit(): void {
     this.http.get('https://cref-two.vercel.app/api/v1/culto-lista/').subscribe((data: any) => {
-      this.culto = data.map((item: any) => ({
+      // Ordena os dados em ordem decrescente pelo campo 'id'
+      this.culto = data.sort((a: any, b: any) => b.id - a.id).map((item: any) => ({
         ...item,
         link: this.sanitizeUrl(item.link)
       }));
