@@ -10,9 +10,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4" *ngFor="let cultos of culto">
-            <div class="video-thumbnail" (click)="openModal(cultos.link)">             
-                <iframe class="link" [src]="cultos.link" frameborder="0"  allowfullscreen></iframe>
-            </div>
+            <!-- <div class="video-thumbnail" (click)="openModal(cultos.link)">              -->
+                <iframe class="link" [src]="cultos.link"  allowfullscreen></iframe>
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
 <!-- </div> -->
 
 <!-- Modal -->
-<div *ngIf="expandedVideo" class="modal fade show d-block" tabindex="-1" role="dialog">
+<!-- <div *ngIf="expandedVideo" class="modal fade show d-block" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -54,6 +54,6 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
