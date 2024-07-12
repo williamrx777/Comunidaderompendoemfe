@@ -4,11 +4,11 @@
 
 .link {
     padding-top: 20px;
-    display: block;
-    margin: 0 auto;
+    /* display: block;
+    margin: 0 auto; */
     width: 100%;
     height: 300px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     transition: all 0.3s ease;
 }
 
@@ -58,7 +58,7 @@
     }
 }
 
-/* Estilo para o vídeo expandido */
+/* Estilo para o vídeo expandido
 .modal-dialog {
     max-width: 80%;
     width: 100%;
@@ -79,4 +79,4 @@
 .expanded-video {
     width: 100%;
     height: 80vh;
-}
+} */
