@@ -9,18 +9,18 @@
     <div class="carousel-item active" *ngIf="culto.length > 0">
       <div class="container">
         <div class="row">
-          <div class="col-md-4" *ngFor="let cultos of culto.slice(0, 3)">
+          <div class="col-md-4" *ngFor="let cultos of culto">
             <div class="video-thumbnail" (click)="openModal(cultos.link)">
-              <iframe class="link" [src]="cultos.link"  allowfullscreen></iframe>
               <div class="d-flex justify-content-center align-content-center">
-                <img class="expandi" width="30px" src="https://www.svgrepo.com/show/374876/expand.svg" alt="click aqui para expandir o video">
+                <iframe class="link" [src]="cultos.link"  allowfullscreen></iframe>
+                
             </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="carousel-item" *ngFor="let group of culto.slice(3) | chunk: 3">
+    <!-- <div class="carousel-item" *ngFor="let group of culto.slice(3) | chunk: 3">
       <div class="container">
         <div class="row">
           <div class="col-md-4" *ngFor="let cultos of group">
@@ -42,7 +42,7 @@
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
-  </button>
+  </button> -->
 </div>
 
 <!-- Modal -->
