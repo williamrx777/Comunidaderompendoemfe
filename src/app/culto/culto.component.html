@@ -1,21 +1,19 @@
 <main class="fundo">
- 
-    <img class="img-fluid "  src="cultos.jpg" alt="fundo">
-  
+  <img class="img-fluid" src="cultos.jpg" alt="fundo">
 </main>
 
 <!-- <div id="carouselExample" class="carousel slide"> -->
   <!-- <div class="carousel-inner"> -->
     <!-- <div class="carousel-item active" *ngIf="culto.length > 0"> -->
-      <div class="container">
+      
+    <div class="container">
         <div class="row">
-          <div class="col-md-4" *ngFor="let cultos of culto">
-            <!-- <div class="video-thumbnail" (click)="openModal(cultos.link)">              -->
-                <iframe class="link" [src]="cultos.link"  allowfullscreen></iframe>
-            <!-- </div> -->
-          </div>
+            <div class="col-md-4 video-left" *ngFor="let cultos of culto; let i = index" [ngClass]="{'video-left': i % 3 == 0, 'video-middle': i % 3 == 1, 'video-right': i % 3 == 2}">
+                <iframe class="link" [src]="cultos.link" allowfullscreen></iframe>
+            </div>
         </div>
-      </div>
+    </div>
+    
     <!-- </div> -->
     <!-- <div class="carousel-item" *ngFor="let group of culto.slice(3) | chunk: 3">
       <div class="container">
