@@ -2,7 +2,7 @@ header {
   padding-top: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: black;
   width: 100%;
@@ -32,6 +32,9 @@ header a.rotas {
   color: white;
   text-decoration: none;
   padding: 10px;
+}
+.menu {
+  display: contents;
 }
 
 .menu-toggle {
@@ -73,11 +76,15 @@ header a.rotas {
   header a.rotas {
     padding: 5px 10px;
   }
+  .sociais {
+    display: none;
+  }
 }
 
 .rotas {
     color: white;
     text-decoration: none;
+
 }
 
 .rotas:hover{
