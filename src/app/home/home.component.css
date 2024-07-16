@@ -65,3 +65,23 @@ aside {
 .animate__animated {
   --animate-duration: 1.5s; /* duração da animação */
 }
+
+.pastores{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+}
+to {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
