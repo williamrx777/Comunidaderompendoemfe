@@ -1,12 +1,14 @@
 <main class="fundo">
     <img class="fundo" src="fundo.jpg" alt="fundo">
 </main>
+
 <aside>
     <div class="container" *ngFor="let mensagemdodia of mensagem">
         <h2 class="text-center">{{mensagemdodia.titulo}}</h2>
         <p>{{mensagemdodia.descricao}}</p>
     </div>
 </aside>
+
 <div class="relogio d-flex flex-column animate__animated animate__fadeIn">
     <div class="horario">
         <img width="150px" class="text-center" src="relogio.png" alt="relogio" >
