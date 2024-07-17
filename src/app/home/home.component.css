@@ -89,3 +89,9 @@ to {
 .separador {
   padding: 10px;
 }
+
+.versiculo {
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+}
