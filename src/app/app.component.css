@@ -32,9 +32,15 @@ header a.rotas {
   color: white;
   text-decoration: none;
   padding: 10px;
+  transition: color 0.5s ease; /* Define a transição da cor para durar 0.5 segundos */
 }
 .menu {
   display: contents;
+}
+
+header a.rotas:hover{
+  color: red;
+
 }
 
 .menu-toggle {
@@ -81,15 +87,7 @@ header a.rotas {
   }
 }
 
-.rotas {
-    color: white;
-    text-decoration: none;
 
-}
-
-.rotas:hover{
-    text-decoration: underline red;
-}
 
   
 
