@@ -142,3 +142,11 @@ footer{
   font-size: 16px;
  
 }
+
+.whatsapp {
+  text-align: center;
+  border-radius: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size: 16px;
+}
