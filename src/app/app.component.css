@@ -25,22 +25,22 @@ header img.logo {
 
 header .icon {
   color: white;
-  font-size: 24px; /* Ajuste o tamanho conforme necessário */
+  font-size: 24px;
 }
 
 header a.rotas {
   color: white;
   text-decoration: none;
   padding: 10px;
-  transition: color 0.5s ease; /* Define a transição da cor para durar 0.5 segundos */
+  transition: color 0.5s ease;
 }
+
 .menu {
   display: contents;
 }
 
-header a.rotas:hover{
+header a.rotas:hover {
   color: red;
-
 }
 
 .menu-toggle {
@@ -54,67 +54,69 @@ header a.rotas:hover{
 
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
   }
 
   .logo-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
   }
 
   .menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
+      display: none;
+      flex-direction: column;
+      width: 100%;
   }
 
   .menu.show {
-    display: flex;
+      display: flex;
   }
 
   .menu-toggle {
-    display: block;
+      display: block;
   }
 
   header a.rotas {
-    padding: 5px 10px;
+      padding: 5px 10px;
   }
+
   .sociais {
-    display: none;
+      display: none;
   }
 }
 
-.horario-footer{
+.horario-footer {
   text-align: center;
 }
 
-  
-
-  
-footer{
-    padding-top: 10px;
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(16, 16, 16);
-    width: 100%;
+footer {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(16, 16, 16);
+  width: 100%;
+  color: white;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
 }
 
 .endereco {
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex: 1;
+  text-align: center;
 }
 
 .endereco p {
@@ -124,23 +126,25 @@ footer{
 }
 
 .sociais {
-    color: white;
+  color: white;
 }
 
 .logo {
   margin-bottom: 10px;
+  text-align: center;
+  margin-right: 45px;
+  border-radius: 50px;
 }
 
-.titulo{
+.titulo {
   text-align: center;
 }
 
-.text-center{
+.text-center {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 800;
   font-size: 16px;
- 
 }
 
 .whatsapp {
@@ -149,4 +153,20 @@ footer{
   font-family: 'Times New Roman', Times, serif;
   font-weight: 800;
   font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  footer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .endereco, .horario-footer {
+      padding: 20px 0;
+  }
 }
