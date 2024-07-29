@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit{
   mensagem: any[] = []
+  isImageExpanded: boolean = false;
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -19,4 +20,11 @@ export class HomeComponent implements OnInit{
     });
   }
 
+  expandImage() {
+    this.isImageExpanded = true;
+  }
+
+  closeModal() {
+    this.isImageExpanded = false;
+  }
 }

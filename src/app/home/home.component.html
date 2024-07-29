@@ -58,14 +58,20 @@
     <div class="separador-evento"></div>
     
     <div class="container-img">
-    
-        <img class="evento-img" src="Acaodegraça.jpg" alt="Acaodegraça">
+        <img class="evento-img" src="Acaodegraça.jpg" alt="Acaodegraça" (click)="expandImage()">
         <div class="aviso">
-            <p>Venha fazer parte do Aniversario do nosso Pastor.</p> 
-            <p>Você sera abençoado no nosso culto de ação de graça.</p>
-            <p>Traga sua familia vizinho e amigos.</p>
-            <p>Deus o abençoe.</p>
+          <p>Venha fazer parte do Aniversário do nosso Pastor.</p>
+          <p>Você será abençoado no nosso culto de ação de graça.</p>
+          <p>Traga sua família, vizinhos e amigos.</p>
+          <p>Deus o abençoe.</p>
+          <p>Ajude com uma oferta a partir de R$ 10,00.</p>
         </div>
-    </div>
+      </div>
+      
+      <!-- Modal for expanded image -->
+      <div class="modal" [ngClass]="{'show': isImageExpanded}" (click)="closeModal()">
+        <img class="modal-content" src="Acaodegraça.jpg" alt="Acaodegraça">
+      </div>
+      
 
 </div>

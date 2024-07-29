@@ -98,26 +98,59 @@ to {
 
 
 
-.evento-img {
-  width: 25%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  
-}
-
-.separador-evento{
-  
-    border: 1px solid black;
-    width: 20%;
-    margin-bottom: 10px;
-
-}
-
-.container-img{
+.container-img {
   display: flex;
   gap: 15px;
   font-size: 18px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 400;
   align-items: center;
+}
+
+.evento-img {
+  width: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: transform 0.2s; /* smooth zoom */
+}
+
+.separador-evento {
+  border: 1px solid black;
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+.aviso {
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.modal-content:hover {
+  transform: scale(1.1); /* Zoom effect */
 }
