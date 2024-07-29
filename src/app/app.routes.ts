@@ -6,6 +6,7 @@ import { TestemunhoComponent } from './testemunho/testemunho.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { HorarioComponent } from './horario/horario.component';
 import { QuemsomosComponent } from './quemsomos/quemsomos.component';
+import { EventoComponent } from './evento/evento.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -13,6 +14,7 @@ export const routes: Routes = [
     { path: 'galeria', component: GaleriaComponent },
     { path: 'contato', component: ContatoComponent },
     { path: 'quemsomos', component: QuemsomosComponent },
+    // { path: 'evento',  component: EventoComponent}
     // { path: 'horario', component: HorarioComponent },
     // { path: 'testemunho', component: TestemunhoComponent }
 ];

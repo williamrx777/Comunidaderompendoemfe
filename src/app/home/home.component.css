@@ -95,3 +95,29 @@ to {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
 }
+
+
+
+.evento-img {
+  width: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+}
+
+.separador-evento{
+  
+    border: 1px solid black;
+    width: 20%;
+    margin-bottom: 10px;
+
+}
+
+.container-img{
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 400;
+  align-items: center;
+}
