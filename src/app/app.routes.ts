@@ -11,7 +11,7 @@ import { EventoComponent } from './evento/evento.component';
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'culto', component: CultoComponent },
-    { path: 'galeria', component: GaleriaComponent },
+    // { path: 'galeria', component: GaleriaComponent },
     { path: 'contato', component: ContatoComponent },
     { path: 'quemsomos', component: QuemsomosComponent },
     // { path: 'evento',  component: EventoComponent}
