@@ -125,8 +125,9 @@
 
 .overlay-content {
     position: relative;
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 100%;
+    padding-top: 15px;
 }
 
 .overlay-iframe {
