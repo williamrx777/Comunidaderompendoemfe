@@ -12,53 +12,6 @@
     /* padding-bottom: 20px; */
     transition: all 0.3s ease;
 }
-
-/* Ajuste para telas menores */
-@media (max-width: 1200px) {
-    .link {
-        width: 90%;
-    }
-}
-
-@media (max-width: 992px) {
-    .link {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .link {
-        width: 100%;
-        height: 300px; /* Ajuste a altura para conteúdo variável */
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    .expandi {
-        display: none;
-    }
-}
-
-@media (max-width: 576px) {
-    .link {
-        width: 100%;
-        height: 300px; /* Ajuste a altura para conteúdo variável */
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    .expandi {
-        display: none;
-    }
-    /* Ajusta a exibição para empilhar verticalmente */
-    .container .row {
-        display: block;
-    }
-
-    .container .col-md-4 {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-}
-
 /* Estilo para o vídeo expandido
 .modal-dialog {
     max-width: 80%;
@@ -235,8 +188,11 @@
     }
 }
 
-/* Ajustes para dispositivos menores */
-@media (max-width: 768px) {
+/* Ajuste para telas menores */
+@media (max-width: 1200px) {
+    .link {
+        width: 90%;
+    }
     .video-left,
     .video-middle,
     .video-right {
@@ -246,18 +202,116 @@
         transform: none;
         opacity: 1;
     }
+   
+    .overlay-iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay-content {
+        position: none;
+        width: 100%;
+        height: 50%;
+    }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
+    .link {
+        width: 100%;
+    }
     .video-left,
     .video-middle,
     .video-right {
-        /* Ajusta animações e transições para telas muito pequenas */
+        /* Ajusta animações e transições para telas menores */
         animation: none;
         transition: none;
         transform: none;
         opacity: 1;
     }
+    .video-wrapper{
+        position: none;
+    }
+    .overlay-iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay-content {
+        position: none;
+        width: 100%;
+        height: 50%;
+    }
 }
 
-/* Adiciona mais estilos se necessário */
+@media (max-width: 768px) {
+    .link {
+        width: 100%;
+        height: 300px; /* Ajuste a altura para conteúdo variável */
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .expandi {
+        display: none;
+    }
+    .video-left,
+    .video-middle,
+    .video-right {
+        /* Ajusta animações e transições para telas menores */
+        animation: none;
+        transition: none;
+        transform: none;
+        opacity: 1;
+    }
+    .video-wrapper{
+        position: none;
+    }
+    .overlay-iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay-content {
+        position: none;
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .link {
+        width: 100%;
+        height: 300px; /* Ajuste a altura para conteúdo variável */
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .expandi {
+        display: none;
+    }
+    /* Ajusta a exibição para empilhar verticalmente */
+    .container .row {
+        display: block;
+    }
+
+    .container .col-md-4 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .video-left,
+    .video-middle,
+    .video-right {
+        /* Ajusta animações e transições para telas menores */
+        animation: none;
+        transition: none;
+        transform: none;
+        opacity: 1;
+    }
+    .video-wrapper{
+        position: none;
+    }
+    .overlay-iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay-content {
+        position: none;
+        width: 100%;
+        height: 50%;
+    }
+}
