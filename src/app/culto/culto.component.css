@@ -235,11 +235,14 @@
     }
 }
 
+/* Ajustes para dispositivos menores */
 @media (max-width: 768px) {
     .video-left,
     .video-middle,
     .video-right {
-        /* Ajusta animações para telas menores */
+        /* Ajusta animações e transições para telas menores */
+        animation: none;
+        transition: none;
         transform: none;
         opacity: 1;
     }
@@ -249,11 +252,12 @@
     .video-left,
     .video-middle,
     .video-right {
-        /* Ajusta animações para telas muito pequenas */
+        /* Ajusta animações e transições para telas muito pequenas */
+        animation: none;
+        transition: none;
         transform: none;
         opacity: 1;
     }
 }
-
 
 /* Adiciona mais estilos se necessário */
