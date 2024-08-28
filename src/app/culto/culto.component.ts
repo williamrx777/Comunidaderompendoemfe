@@ -13,6 +13,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class CultoComponent implements OnInit {
   culto: any[] = [];
+  expandedVideo: SafeResourceUrl | null = null;
   // expandedVideo: SafeResourceUrl | null = null;
 
   constructor(private http: HttpClient, private sanitizer: DomSanitizer) {}
@@ -29,6 +30,16 @@ export class CultoComponent implements OnInit {
 
   sanitizeUrl(url: string): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+
+  openModal(url: SafeResourceUrl): void {
+    this.expandedVideo = url;
+    document.body.classList.add('no-scroll');
+  }
+
+  closeModal(): void {
+    this.expandedVideo = null;
+    document.body.classList.remove('no-scroll');
   }
 
   // openModal(url: SafeResourceUrl): void {

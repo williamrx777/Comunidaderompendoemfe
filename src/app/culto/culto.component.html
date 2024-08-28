@@ -6,13 +6,23 @@
   <!-- <div class="carousel-inner"> -->
     <!-- <div class="carousel-item active" *ngIf="culto.length > 0"> -->
       
-    <div class="container">
+      <div class="container">
         <div class="row">
             <div class="col-md-4 video-left" *ngFor="let cultos of culto; let i = index" [ngClass]="{'video-left': i % 3 == 0, 'video-middle': i % 3 == 1, 'video-right': i % 3 == 2}">
-                <iframe class="link" [src]="cultos.link" allowfullscreen></iframe>
+                <div class="video-wrapper">
+                    <iframe class="link" [src]="cultos.link" allowfullscreen></iframe>
+                    <button class="play-button" (click)="openModal(cultos.link)"></button>
+                </div>
             </div>
         </div>
     </div>
+    
+    <div class="overlay" *ngIf="expandedVideo" (click)="closeModal()">
+        <div class="overlay-content">
+            <iframe class="overlay-iframe" [src]="expandedVideo" allowfullscreen></iframe>
+        </div>
+    </div>
+    
     
     <!-- </div> -->
     <!-- <div class="carousel-item" *ngFor="let group of culto.slice(3) | chunk: 3">
