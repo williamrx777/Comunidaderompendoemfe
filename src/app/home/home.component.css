@@ -26,32 +26,32 @@ aside {
 }
 
 .fundo {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
       opacity: 0;
   }
   to {
       opacity: 1;
   }
-}
+} */
 
 .container {
   animation: slideIn 1s ease-in-out;
 }
 
-@keyframes slideIn {
+/* @keyframes slideIn {
   from {
-      transform: translateY(20px);
+      transform: translateY(0);
       opacity: 0;
   }
   to {
       transform: translateY(0);
       opacity: 1;
   }
-}
+} */
 
 .horario {
   text-align: center;
@@ -73,7 +73,7 @@ aside {
 
 @keyframes fadeIn {
   from {
-    transform: translateY(20px);
+    transform: translateY(0px);
     opacity: 0;
 }
 to {

@@ -41,7 +41,7 @@ header a.rotas {
 }
 
 header a.rotas:hover {
-  color: red;
+  color: rgb(103, 2, 2);
 }
 
 .menu-toggle {
