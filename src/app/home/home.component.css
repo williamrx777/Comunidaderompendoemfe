@@ -7,19 +7,7 @@
   height: 100vh;
 }
 
-@media (max-width: 768px) {
-  .fundo {
-    background-size: contain; /* Ajuste conforme necessário para telas menores */
-    height: 200px;
-  }
-}
 
-@media (max-width: 480px) {
-  .fundo {
-    background-size: contain; /* Ajuste conforme necessário para telas muito pequenas */
-    height: 200px;
-  }
-}
 
 aside {
   padding-top: 50px;
@@ -154,4 +142,32 @@ to {
 
 .modal-content:hover {
   transform: scale(1.1); /* Zoom effect */
+}
+
+/* Media Queries */
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+  .fundo {
+    background-size: contain;
+    height: 200px;
+  }
+  
+  .modal-content {
+    max-width: 90%;
+    max-height: 90%;
+  }
+}
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+  .fundo {
+    background-size: contain;
+    height: 200px;
+  }
+  
+  .modal-content {
+    max-width: 90%;
+    max-height: 90%;
+  }
 }
