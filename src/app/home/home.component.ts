@@ -12,6 +12,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit{
   mensagem: any[] = []
   isImageExpanded: boolean = false;
+  expandedImageSrc: string = '';
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -20,11 +21,12 @@ export class HomeComponent implements OnInit{
     });
   }
 
-  expandImage() {
+  expandImage(imageSrc: string): void {
+    this.expandedImageSrc = imageSrc;
     this.isImageExpanded = true;
   }
 
-  closeModal() {
+  closeModal(): void {
     this.isImageExpanded = false;
   }
 }

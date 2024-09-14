@@ -92,11 +92,22 @@
 </div>
 
 <div class="container">
+  <h3>Quem crê e for batizado será salvo.</h3>
+  <div class="separador-evento"></div>
+  <div class="container-img">
+    <img class="evento-img" src="batizado01.jpg" alt="batizado01" (click)="expandImage('batizado01.jpg')">
+    <img class="evento-img" src="batizado02.jpg" alt="batizado02" (click)="expandImage('batizado02.jpg')">
+    <img class="evento-img" src="batizado03.jpg" alt="batizado03" (click)="expandImage('batizado03.jpg')">
+    <img class="evento-img" src="batizado04.jpg" alt="batizado04" (click)="expandImage('batizado04.jpg')">
+  </div>
+</div>
+
+<div class="container">
     <h3>Nossos Eventos</h3>
     <div class="separador-evento"></div>
     
     <div class="container-img">
-        <img class="evento-img" src="Acaodegraça.jpg" alt="Acaodegraça" (click)="expandImage()">
+        <img class="evento-img" src="Acaodegraça.jpg" alt="Acaodegraça" (click)="expandImage('Acaodegraça.jpg')">
         <div class="aviso">
           <p>Venha fazer parte do Aniversário do nosso Pastor.</p>
           <p>Você será abençoado no nosso culto de ação de graça.</p>
@@ -108,8 +119,6 @@
       
       <!-- Modal for expanded image -->
       <div class="modal" [ngClass]="{'show': isImageExpanded}" (click)="closeModal()">
-        <img class="modal-content" src="Acaodegraça.jpg" alt="Acaodegraça">
+        <img class="modal-content" [src]="expandedImageSrc" alt="Expanded Image">
       </div>
-      
-
 </div>
